@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MUNGPT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>MUNGPT</h1>
+
+    <p>AI Powered MUN Research Assistant</p>
+
+    <input type="text" id="country" placeholder="Enter Country">
+
+    <input type="text" id="committee" placeholder="Enter Committee">
+
+    <button onclick="generateResearch()">
+        Generate Research
+    </button>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
